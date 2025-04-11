@@ -1,0 +1,258 @@
+name: "Adobe Commerce Business Practitioner Prep Course"
+subname: ""
+author: "Joseph Maxwell"
+copyright_year: "2025"
+title_template: ""
+chapter_template: ""
+book_template: ""
+pieces_template: ""
+image: ""
+background_color: "#fc5785"
+images_base_url: "https://swiftotter.com/media/courses/AD0-E708/"
+layout:
+  objective1:
+    key: "Features"
+    name: "Core Features / General Configuration"
+    meta:
+    sections:
+      - name: "Identify Features"
+        files:
+          - content/1-features/01-identify-features.md
+      - name: "Edition Differences"
+        files:
+          - content/1-features/02-edition-differences.md
+      - name: "Product Types and Features"
+        files:
+          - content/1-features/03-product-types-features/01-simple-products.md
+          - content/1-features/03-product-types-features/02-configurable-products.md
+          - content/1-features/03-product-types-features/03-virtual-products.md
+          - content/1-features/03-product-types-features/04-grouped-products.md
+          - content/1-features/03-product-types-features/05-bundle-products.md
+          - content/1-features/03-product-types-features/06-downloadable-products.md
+          - content/1-features/03-product-types-features/07-gift-card-products.md
+          - content/1-features/03-product-types-features/08-product-attributes.md
+          - content/1-features/03-product-types-features/09-attribute-sets-groups.md
+          - content/1-features/03-product-types-features/10-images-and-videos.md
+          - content/1-features/03-product-types-features/11-swatches.md
+          - content/1-features/03-product-types-features/12-product-options.md
+          - content/1-features/03-product-types-features/13-product-grid.md
+          - content/1-features/03-product-types-features/14-advanced-pricing.md
+          - content/1-features/03-product-types-features/15-product-visibility.md
+      - name: "Requirements and Mockups"
+        files:
+          - content/1-features/04-requirements-and-mockups.md
+      - name: "Admin Features"
+        files:
+          - content/1-features/05-admin-features/01-introduction.md
+          - content/1-features/05-admin-features/02-import-export-data.md
+          - content/1-features/05-admin-features/03-index-cache-management.md
+          - content/1-features/05-admin-features/04-reports.md
+          - content/1-features/05-admin-features/05-email-reminders.md
+          - content/1-features/05-admin-features/06-customers.md
+          - content/1-features/05-admin-features/07-customer-attributes.md
+          - content/1-features/05-admin-features/08-common-config.md
+      - name: "Import/Export Commerce Entities"
+        files:
+          - content/1-features/06-import-export-commerce-entities/01-native-options.md
+          - content/1-features/06-import-export-commerce-entities/02-import.md
+          - content/1-features/06-import-export-commerce-entities/03-export.md
+          - content/1-features/06-import-export-commerce-entities/04-scheduled.md
+          - content/1-features/06-import-export-commerce-entities/05-product-imports.md
+      - name: "Roles and Permissions"
+        files:
+          - content/1-features/07-roles-and-permissions.md
+      - name: "Configure Cart and Checkout"
+        files:
+          - content/1-features/08-cart-checkout-config/01-overview.md
+          - content/1-features/08-cart-checkout-config/02-payment-and-shipping-config.md
+          - content/1-features/08-cart-checkout-config/03-checkout.md
+          - content/1-features/08-cart-checkout-config/04-rewards.md
+          - content/1-features/08-cart-checkout-config/05-additional-features.md
+      - name: "Native Shipping Methods"
+        files:
+          - content/1-features/09-native-shipping-methods/01-overview.md
+          - content/1-features/09-native-shipping-methods/02-table-rates.md
+          - content/1-features/09-native-shipping-methods/03-in-store.md
+          - content/1-features/09-native-shipping-methods/04-returns.md
+          - content/1-features/09-native-shipping-methods/05-free-shipping.md
+      - name: "Create and Publish Content"
+        files:
+          - content/1-features/10-create-content/01-page-builder.md
+          - content/1-features/10-create-content/02-cms-pages.md
+          - content/1-features/10-create-content/03-blocks.md
+          - content/1-features/10-create-content/04-widgets.md
+          - content/1-features/10-create-content/05-page-hierarchy.md
+          - content/1-features/10-create-content/06-banners.md
+          - content/1-features/10-create-content/07-dynamic-blocks.md
+          - content/1-features/10-create-content/08-custom-variables.md
+          - content/1-features/10-create-content/09-content-staging.md
+      - name: "Order Life Cycle"
+        files:
+          - content/1-features/11-order-life-cycle.md
+      - name: "Gifting Options"
+        files:
+          - content/1-features/12-gifting-options/01-gift-cards.md
+          - content/1-features/12-gifting-options/02-gift-accounts.md
+          - content/1-features/12-gifting-options/03-gift-wrap.md
+          - content/1-features/12-gifting-options/04-gift-options.md
+      - name: "Transactional Emails"
+        files:
+          - content/1-features/13-transactional-emails.md
+      - name: "Customer Loyalty"
+        files:
+          - content/1-features/14-customer-loyalty/01-customer-groups.md
+          - content/1-features/14-customer-loyalty/02-customer-segments.md
+          - content/1-features/14-customer-loyalty/03-customer-self-service.md
+          - content/1-features/14-customer-loyalty/04-gift-registry.md
+          - content/1-features/14-customer-loyalty/05-returns.md
+          - content/1-features/14-customer-loyalty/06-rewards.md
+  objective2:
+    key: "Merchandising"
+    name: "Merchandising"
+    meta:
+    sections:
+      - name: "Create Promotions"
+        files:
+          - content/2-merchandising/02-create-promotions/01-cart-rules.md
+          - content/2-merchandising/02-create-promotions/02-cart-conditions.md
+          - content/2-merchandising/02-create-promotions/03-cart-actions.md
+          - content/2-merchandising/02-create-promotions/04-coupon-codes.md
+          - content/2-merchandising/02-create-promotions/05-catalog-rules.md
+          - content/2-merchandising/02-create-promotions/06-related-products.md
+          - content/2-merchandising/02-create-promotions/07-product-recommendations.md
+      - name: "Manage Categories"
+        files:
+          - content/2-merchandising/03-manage-categories/01-categories.md
+          - content/2-merchandising/03-manage-categories/02-display.md
+          - content/2-merchandising/03-manage-categories/03-products.md
+          - content/2-merchandising/03-manage-categories/04-visual-merchandiser.md
+          - content/2-merchandising/03-manage-categories/05-visual-merchandiser-use.md
+          - content/2-merchandising/03-manage-categories/06-permissions.md
+      - name: "Pricing Config"
+        files:
+          - content/2-merchandising/04-pricing-config/01-tiered-pricing.md
+          - content/2-merchandising/04-pricing-config/02-rules.md
+          - content/2-merchandising/04-pricing-config/03-checkout-price-calc.md
+          - content/2-merchandising/04-pricing-config/04-shared-catalogs.md
+          - content/2-merchandising/04-pricing-config/05-special-price.md
+          - content/2-merchandising/04-pricing-config/06-map-msrp.md
+          - content/2-merchandising/04-pricing-config/07-tax-config.md
+          - content/2-merchandising/04-pricing-config/08-taxes.md
+          - content/2-merchandising/04-pricing-config/09-currency.md
+  objective3:
+    key: "Marketing"
+    name: "Digital Marketing"
+    meta:
+    sections:
+      - name: "SEO"
+        files:
+          - content/3-digital-marketing/01-seo/01-seo.md
+          - content/3-digital-marketing/01-seo/02-content.md
+          - content/3-digital-marketing/01-seo/03-backlinks.md
+          - content/3-digital-marketing/01-seo/04-seo-impacts.md
+          - content/3-digital-marketing/01-seo/05-canonical.md
+          - content/3-digital-marketing/01-seo/06-social.md
+          - content/3-digital-marketing/01-seo/07-affiliate.md
+      - name: "Metrics"
+        files:
+          - content/3-digital-marketing/02-metrics/01-overview.md
+          - content/3-digital-marketing/02-metrics/02-gtm.md
+          - content/3-digital-marketing/02-metrics/03-bi.md
+          - content/3-digital-marketing/02-metrics/04-ga.md
+  objective4:
+    key: "Add-ons"
+    name: "Add-on Modules and Additional Products"
+    meta:
+    sections:
+      - name: "B2B"
+        files:
+          - content/4-add-ons/01-b2b/01-overview.md
+          - content/4-add-ons/01-b2b/02-manage-company-accounts.md
+          - content/4-add-ons/01-b2b/03-company-account-permissions.md
+          - content/4-add-ons/01-b2b/04-shared-catalogs.md
+          - content/4-add-ons/01-b2b/05-create-quotes.md
+      - name: "MSI"
+        files:
+          - content/4-add-ons/02-msi/01-overview.md
+          - content/4-add-ons/02-msi/02-source.md
+          - content/4-add-ons/02-msi/03-stock.md
+          - content/4-add-ons/02-msi/04-products.md
+          - content/4-add-ons/02-msi/05-orders.md
+          - content/4-add-ons/02-msi/06-configuration.md
+          - content/4-add-ons/02-msi/07-sourcing-algorithms.md
+          - content/4-add-ons/02-msi/08-in-store.md
+      - name: "BI"
+        files:
+          - content/4-add-ons/03-bi/01-advanced-reporting.md
+          - content/4-add-ons/03-bi/02-bi.md
+      - name: "Search"
+        files:
+          - content/4-add-ons/04-search.md
+      - name: "Taxes"
+        files:
+          - content/4-add-ons/05-taxes/01-overview.md
+          - content/4-add-ons/05-taxes/02-terminology.md
+          - content/4-add-ons/05-taxes/03-vat.md
+      - name: "Tailored Pricing"
+        files:
+          - content/4-add-ons/06-tailored-pricing.md
+      - name: "Product Differences"
+        files:
+          - content/4-add-ons/07-product-differences.md
+  objective5:
+    key: "Architecture"
+    name: "System Architecture"
+    meta:
+    sections:
+      - name: "Evaluate Requirements"
+        files:
+          - content/5-system-architecture/01-evaluate-requirements/01-overview.md
+          - content/5-system-architecture/01-evaluate-requirements/02-attribute-scopes.md
+          - content/5-system-architecture/01-evaluate-requirements/03-multi-site.md
+          - content/5-system-architecture/01-evaluate-requirements/04-websites.md
+          - content/5-system-architecture/01-evaluate-requirements/05-stores.md
+          - content/5-system-architecture/01-evaluate-requirements/06-store-views.md
+          - content/5-system-architecture/01-evaluate-requirements/07-localization.md
+      - name: "Performance"
+        files:
+          - content/5-system-architecture/02-performance.md
+      - name: "Integrations"
+        files:
+          - content/5-system-architecture/03-integrations/01-soap.md
+          - content/5-system-architecture/03-integrations/02-rest.md
+          - content/5-system-architecture/03-integrations/03-graphql.md
+          - content/5-system-architecture/03-integrations/04-auth-methods.md
+      - name: "Approaches"
+        files:
+          - content/5-system-architecture/04-approaches.md
+  objective6:
+    key: "Compliance"
+    name: "Compliance / Security"
+    meta:
+    sections:
+      - name: "Roles and Permissions"
+        files:
+          - content/6-compliance/01-roles-permissions.md
+      - name: "Privacy"
+        files:
+          - content/6-compliance/02-privacy/01-pci-compliance.md
+          - content/6-compliance/02-privacy/02-pci-merchant-levels.md
+          - content/6-compliance/02-privacy/03-saq.md
+          - content/6-compliance/02-privacy/04-ada-compliance.md
+          - content/6-compliance/02-privacy/05-gdpr.md
+          - content/6-compliance/02-privacy/06-data-protection.md
+          - content/6-compliance/02-privacy/07-company-responsibility.md
+          - content/6-compliance/02-privacy/08-core-gdpr-support.md
+      - name: "Basic Security"
+        files:
+          - content/6-compliance/03-basic-security.md
+      - name: "Tax Laws Configuration"
+        files:
+          - content/6-compliance/04-tax-laws-config/01-vat.md
+          - content/6-compliance/04-tax-laws-config/02-vat-config.md
+          - content/6-compliance/04-tax-laws-config/03-cross-border-trade.md
+          - content/6-compliance/04-tax-laws-config/04-cross-border-taxes.md
+          - content/6-compliance/04-tax-laws-config/05-fixed-price-tax.md
+          - content/6-compliance/04-tax-laws-config/06-distance-selling.md
+          - content/6-compliance/04-tax-laws-config/07-tax-regulations.md
+          - content/6-compliance/04-tax-laws-config/08-state-taxes.md

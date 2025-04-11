@@ -1,0 +1,448 @@
+<div class="individual">
+<h3><a id="user-content-display-settings" class="anchor" aria-hidden="true" href="#display-settings"><span aria-hidden="true" class="octicon octicon-link"></span></a>Display Settings</h3>
+<p>Categories can be viewed in three modes:</p>
+<ul>
+<li>Static block only: only shows content from the “Add CMS Block” attribute.</li>
+<li>Products only: only shows products and no static block.</li>
+<li>Static block and products: shows both.</li>
+</ul>
+<p>The Anchor setting is used to enable layered navigation (the sidebar in a category). This setting also merges the current category’s products with the products from the category’s children.</p>
+<p><strong>Further reading:</strong></p>
+<ul>
+<li><a href="https://docs.magento.com/user-guide/catalog/category-create.html" rel="nofollow">Creating Categories</a></li>
+<li><a href="https://www.ubertheme.com/docs/enable-layered-navigation-magento-2-store/" rel="nofollow">How to enable Layered Navigation in Magento 2 store</a></li>
+<li><a href="https://www.fontis.com.au/blog/anchor-categories-position-sorting-explained" rel="nofollow">Anchor categories and position sorting explained (Magento 1, but the concepts still apply)</a></li>
+</ul>
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
+<style>
+    @font-face {
+        font-family: "Aeonik";
+        src:url(https://swiftotter.com/static/frontend/SwiftOtter/Manarola/en_US/fonts/aeonik/Aeonik-Regular.woff2) format("woff2");
+
+        font-weight:400;
+        font-style:normal;
+        font-display:swap
+    }
+
+    @font-face{
+        font-family:"Aeonik";
+        src:url(https://swiftotter.com/static/frontend/SwiftOtter/Manarola/en_US/fonts/aeonik/Aeonik-RegularItalic.woff2) format("woff2");
+
+        font-weight:400;
+        font-style:italic;
+        font-display:swap
+    }
+
+    @font-face{
+        font-family: "Aeonik";
+        src:url(https://swiftotter.com/static/frontend/SwiftOtter/Manarola/en_US/fonts/aeonik/Aeonik-Medium.woff2) format("woff2");
+
+        font-weight:600;
+        font-style:normal;
+        font-display:swap
+    }
+
+    @font-face{
+        font-family: "Aeonik";
+        src:url(https://swiftotter.com/static/frontend/SwiftOtter/Manarola/en_US/fonts/aeonik/Aeonik-MediumItalic.woff2) format("woff2");
+
+        font-weight:600;
+        font-style:italic;
+        font-display:swap
+    }
+
+    @font-face{
+        font-family: "Recoleta";
+        src:url(https://swiftotter.com/static/frontend/SwiftOtter/Manarola/en_US/fonts/recoleta/Recoleta-Regular.woff2) format("woff2");
+
+        font-weight:400;
+        font-style:normal;
+        font-display:swap
+    }
+
+    @font-face {
+        font-family: "Recoleta";
+        src:url(https://swiftotter.com/static/frontend/SwiftOtter/Manarola/en_US/fonts/recoleta/Recoleta-Bold.woff2) format("woff2");
+
+        font-weight:700;
+        font-style:normal;
+        font-display:swap
+    }
+
+    :root {
+        --primary-color:#0d052c;
+        --color-attention:#f7d557;
+        --color-heavy:#5f9ef4;
+        --color-soft:#f1c5d3;
+        --color-attention-scaled:color-pink-vivid;
+        --color-bright:#ee8763;
+        --color-background-decoration:#7774ff;
+        --big-radius:25px;
+        --small-radius:7px;
+        --extra-mega-large:90rem;
+        --extra-large:85rem;
+        --huge:75rem;
+        --large:60rem;
+        --big:50rem;
+        --medium:40rem;
+        --small:30rem;
+        --tiny:20rem;
+        --primary-border:2px solid #0d052c;
+        --primary-font:Aeonik;
+        --special-font:Recoleta
+    }
+
+    body {
+        font-family: 'Aeonik', sans-serif;
+        line-height: 1.8;
+    }
+
+    h1, h2 {
+        font-family: 'Recoleta', serif;
+    }
+
+    h3 {
+    }
+
+    pre, code {
+        font-family: Hack, monospace;
+        font-size: 14px;
+        background-color: #efefef;
+        display: inline-block;
+        border-radius: 3px;
+        padding: 4px;
+        margin: 1px;
+    }
+
+    code {
+        overflow-wrap: break-word;
+    }
+
+    .highlight pre {
+        padding: 20px;
+        width: 100%
+    }
+
+    .page {
+        /*page-break-before: always;*/
+        page-break-after: always;
+        page-break-inside: avoid;
+    }
+
+    .page-break {
+        page-break-before: always;
+    }
+
+    @page book-title {
+        margin: 0;
+        padding: 0;
+        background-color: #fc5785;
+
+        padding-top: 0.5in;
+
+        @bottom {
+            content: none;
+        }
+    }
+
+    .book-title {
+        page: book-title;
+        page-break-before: avoid;
+    }
+
+    .book-title.page {
+        page-break-before: avoid;
+    }
+
+    .chapter-title .details, .book-title__inset {
+        width: 7in;
+        margin-top: 0.5in;
+        padding: 0.75in;
+        background-color: #fff;
+        border-top: solid 10px #000;
+        border-bottom: solid 10px #000;
+    }
+
+    .book-title h1 {
+        font-size: 50px;
+    }
+
+    .book-title__inset h2 {
+        color: #777;
+        font-family: 'Aeonik', sans-serif;
+    }
+
+    .book-title__lower {
+        display: flex;
+        padding: 0.5in 1in;
+    }
+
+    .book-title__author {
+        text-align: right;
+        color: #fff;
+        flex: 2;
+    }
+
+    .book-title__logo {
+        text-align: left;
+        flex: 1;
+    }
+
+    .chapter-title .lower svg, .book-title__logo svg {
+        max-width: 100px;
+    }
+
+    .chapter-title h1 {
+        string-set: chapter-title content();
+    }
+
+    .chapter-title .lower {
+        padding-top: 0.5in;
+        text-align: center;
+    }
+
+    .book-title__image {
+        text-align: center;
+    }
+
+    .book-title__image img {
+        max-width: 3in;
+    }
+
+    @page chapter {
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        @bottom {
+            content: string(chapter-title) ", " counter(page);
+            text-align: right;
+            font-family: 'Aeonik', sans-serif;
+        }
+    }
+
+    footer.copyright {
+        flow: static(footer-html);
+    }
+    @page chapter-title {
+        background-color: #fc5785;
+        padding: 0;
+        margin: 0;
+        padding-top: 0.5in;
+
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        @bottom {
+            content: counter(page);
+            font-family: 'Aeonik', sans-serif;
+        }
+    }
+
+    .chapter {
+        page: chapter;
+    }
+
+    .chapter-title {
+        page: chapter-title;
+    }
+
+    .toc > ul {
+        margin-left: 0;
+    }
+
+    .individual {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+</style>
+
+<script type="text/javascript">
+    var didFinish = false;
+
+    function docraptorJavaScriptFinished() {
+        return didFinish;
+    }
+</script>
+
+
+<style>
+    /* from: https://raw.githubusercontent.com/primer/github-syntax-light/master/lib/github-light.css */
+    /*!
+     * GitHub Light v0.5.0
+     * Copyright (c) 2012 - 2017 GitHub, Inc.
+     * Licensed under MIT (https://github.com/primer/github-syntax-theme-generator/blob/master/LICENSE)
+     */
+
+    .pl-c /* comment, punctuation.definition.comment, string.comment */ {
+        color: #6a737d;
+    }
+
+    .pl-c1 /* constant, entity.name.constant, variable.other.constant, variable.language, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.raw, meta.diff.header, meta.output */,
+    .pl-s .pl-v /* string variable */ {
+        color: #005cc5;
+    }
+
+    .pl-e /* entity */,
+    .pl-en /* entity.name */ {
+        color: #6f42c1;
+    }
+
+    .pl-smi /* variable.parameter.function, storage.modifier.package, storage.modifier.import, storage.type.java, variable.other */,
+    .pl-s .pl-s1 /* string source */ {
+        color: #24292e;
+    }
+
+    .pl-ent /* entity.name.tag, markup.quote */ {
+        color: #22863a;
+    }
+
+    .pl-k /* keyword, storage, storage.type */ {
+        color: #d73a49;
+    }
+
+    .pl-s /* string */,
+    .pl-pds /* punctuation.definition.string, source.regexp, string.regexp.character-class */,
+    .pl-s .pl-pse .pl-s1 /* string punctuation.section.embedded source */,
+    .pl-sr /* string.regexp */,
+    .pl-sr .pl-cce /* string.regexp constant.character.escape */,
+    .pl-sr .pl-sre /* string.regexp source.ruby.embedded */,
+    .pl-sr .pl-sra /* string.regexp string.regexp.arbitrary-repitition */ {
+        color: #032f62;
+    }
+
+    .pl-v /* variable */,
+    .pl-smw /* sublimelinter.mark.warning */ {
+        color: #e36209;
+    }
+
+    .pl-bu /* invalid.broken, invalid.deprecated, invalid.unimplemented, message.error, brackethighlighter.unmatched, sublimelinter.mark.error */ {
+        color: #b31d28;
+    }
+
+    .pl-ii /* invalid.illegal */ {
+        color: #fafbfc;
+        background-color: #b31d28;
+    }
+
+    .pl-c2 /* carriage-return */ {
+        color: #fafbfc;
+        background-color: #d73a49;
+    }
+
+    .pl-c2::before /* carriage-return */ {
+        content: "^M";
+    }
+
+    .pl-sr .pl-cce /* string.regexp constant.character.escape */ {
+        font-weight: bold;
+        color: #22863a;
+    }
+
+    .pl-ml /* markup.list */ {
+        color: #735c0f;
+    }
+
+    .pl-mh /* markup.heading */,
+    .pl-mh .pl-en /* markup.heading entity.name */,
+    .pl-ms /* meta.separator */ {
+        font-weight: bold;
+        color: #005cc5;
+    }
+
+    .pl-mi /* markup.italic */ {
+        font-style: italic;
+        color: #24292e;
+    }
+
+    .pl-mb /* markup.bold */ {
+        font-weight: bold;
+        color: #24292e;
+    }
+
+    .pl-md /* markup.deleted, meta.diff.header.from-file, punctuation.definition.deleted */ {
+        color: #b31d28;
+        background-color: #ffeef0;
+    }
+
+    .pl-mi1 /* markup.inserted, meta.diff.header.to-file, punctuation.definition.inserted */ {
+        color: #22863a;
+        background-color: #f0fff4;
+    }
+
+    .pl-mc /* markup.changed, punctuation.definition.changed */ {
+        color: #e36209;
+        background-color: #ffebda;
+    }
+
+    .pl-mi2 /* markup.ignored, markup.untracked */ {
+        color: #f6f8fa;
+        background-color: #005cc5;
+    }
+
+    .pl-mdr /* meta.diff.range */ {
+        font-weight: bold;
+        color: #6f42c1;
+    }
+
+    .pl-ba /* brackethighlighter.tag, brackethighlighter.curly, brackethighlighter.round, brackethighlighter.square, brackethighlighter.angle, brackethighlighter.quote */ {
+        color: #586069;
+    }
+
+    .pl-sg /* sublimelinter.gutter-mark */ {
+        color: #959da5;
+    }
+
+    .pl-corl /* constant.other.reference.link, string.other.link */ {
+        text-decoration: underline;
+        color: #032f62;
+    }
+
+    a, a code {
+        color: #FB1E5B;
+    }
+
+    a:hover, a:hover code {
+        color: #FC5785;
+    }
+
+    code {
+        color: #767676;
+    }
+
+    blockquote {
+        padding: 10px 20px;
+        background-color: #7e2b42;
+        color: white;
+        border-style: solid;
+        border-color: #fc5785;
+        border-width: 5px 0 0 5px;
+    }
+
+    blockquote code {
+        color: #333333;
+        background-color: #efefef;
+    }
+
+    blockquote a {
+        color: #ff77a5;
+    }
+
+    p code {
+        display: inline;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 4px;
+    }
+
+    th {
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+</style>

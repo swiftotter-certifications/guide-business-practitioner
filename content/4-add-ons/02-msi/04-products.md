@@ -1,0 +1,3 @@
+### Products
+
+Inventory is controlled at the global level for simple products. Each product must be found in at least one source (by default it is the Default Source). This specifies where the product will ship from. The administrator must enter the number of products in stock. The administrator can specify a reserve quantity at that source by setting (or overriding) the Notify Quantity. This is, in effect, the safe (reserve) stock quantity at a source location. For example, if a source is a physical retail store, you would want to keep some level of inventory on the shelf for walk-in customers, but you may not need a reserve quantity for a warehouse location.
